@@ -1,0 +1,57 @@
+{
+  "name": "@itsjustcon/amqp-rpc",
+  "version": "0.0.1",
+  "description": "Simple RPC publishers & workers for Node.js - great for creating workers!",
+  "main": "index.js",
+  "author": "Connor Grady <conair360@gmail.com> (http://connorgrady.com/)",
+  "homepage": "https://github.com/itsjustcon/amqp-rpc-nodejs#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsjustcon/amqp-rpc-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itsjustcon/amqp-rpc-nodejs/issues"
+  },
+  "keywords": [
+    "amqp",
+    "rpc"
+  ],
+  "config": {
+    "git-tag-version": true,
+    "sign-git-tag": true
+  },
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "engines": {
+    "node": ">=6.5",
+    "npm": ">=5"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "debug": "^2.6.8",
+    "lodash": "^4.17.4",
+    "source-map-support": "^0.4.15"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-plugin-dev-expression": "^0.2.1",
+    "babel-plugin-source-map-support": "^1.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.0",
+    "babel-register": "^6.24.0",
+    "chai": "^4.0.0",
+    "faker": "^4.1.0",
+    "mocha": "^3.2.0",
+    "sinon": "^2.1.0",
+    "sinon-chai": "^2.9.0"
+  },
+  "scripts": {
+    "build": "rm -rf lib; mkdir lib && babel src --out-dir lib",
+    "test": "mocha"
+  }
+}
