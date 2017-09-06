@@ -1,0 +1,9 @@
+{
+    "presets": [
+      ["env", { "targets": { "node": "current" }}],
+      "flow",
+      "stage-0"
+    ],
+    "plugins": [ "dev-expression", "source-map-support" ],
+    "sourceMaps": "inline"
+}

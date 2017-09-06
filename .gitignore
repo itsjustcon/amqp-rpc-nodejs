@@ -1,0 +1,35 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# Dependencies
+node_modules
+
+# typedefs
+flow-typed
+
+# Compiled output
+build
+lib
+*.tgz
+
+# Test coverage
+coverage
+.nyc_output
+
+# Logs
+logs
+*.log
+npm-debug.log
+
+# Editors and IDEs
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Misc
+.DS_Store
+.tmp
+
+# Project-Specific Settings
